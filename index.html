@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mariell &amp; Øyvind – Bryllup 2025</title>
+  <link rel="icon" type="image/webp" href="images/favicon.webp" />
+  <meta name="description" content="Vi gifter oss 9. mai 2025!" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html">
+        <img src="images/favicon.webp" alt="" class="nav-logo" />
+        Mariell &amp; Øyvind
+      </a>
+      <button class="nav-toggle" aria-label="Meny" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Hjem</a></li>
+        <li><a href="dagen-for-dagen.html">Dagen før dagen</a></li>
+        <li><a href="vielse.html">Vielse</a></li>
+        <li><a href="party.html">Party</a></li>
+        <li><a href="info.html">Info</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page">
+    <div class="container">
+      <div class="two-col">
+
+        <div class="img-wrap">
+          <img src="images/hero.webp" alt="Mariell og Øyvind"
+               onerror="this.style.display='none'; this.parentElement.querySelector('.img-placeholder').style.display='flex';" />
+          <div class="img-placeholder" style="display:none; flex-direction:column; align-items:center; gap:0.5rem;">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#5a7a9e" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            <span>Mariell og Øyvind</span>
+          </div>
+        </div>
+
+        <div class="hero-text">
+          <p class="hero-eyebrow">Vi gifter oss</p>
+          <h1 class="hero-names">Mariell &amp; Øyvind</h1>
+          <p class="hero-date">Lørdag 9. mai 2025</p>
+          <div class="hero-divider"></div>
+          <p class="hero-intro">
+            Vi gleder oss til å feire denne spesielle dagen sammen med dere! Her finner du all informasjon du trenger om bryllupet vårt – fra tid og sted til annen praktisk info.
+            Vi oppdaterer siden fortløpende, så følg gjerne med!
+          </p>
+          <p class="hero-intro" style="margin-top: 0.85rem;">
+            Takk for at du vil være en del av vår store dag. Vi gleder oss til å skape minner sammen med dere,
+            og til å feire kjærligheten med venner og familie.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Mariell &amp; Øyvind &mdash; 9. mai 2025</p>
+  </footer>
+
+</body>
+</html>

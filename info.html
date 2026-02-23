@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Info – Mariell &amp; Øyvind</title>
+  <link rel="icon" type="image/webp" href="images/favicon.webp" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html"><img src="images/favicon.webp" alt="" class="nav-logo" />Mariell &amp; Øyvind</a>
+      <button class="nav-toggle" aria-label="Meny" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Hjem</a></li>
+        <li><a href="dagen-for-dagen.html">Dagen før dagen</a></li>
+        <li><a href="vielse.html">Vielse</a></li>
+        <li><a href="party.html">Party</a></li>
+        <li><a href="info.html" class="active">Info</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page">
+    <div class="container">
+
+      <div class="title-wrap">
+        <h1 class="page-title">Praktisk informasjon</h1>
+        <div class="accent-bar"></div>
+      </div>
+
+      <div class="info-grid">
+
+        <details class="info-card">
+          <summary class="info-card-summary">
+            <span class="info-card-icon">🎤</span>
+            <span class="info-card-title">Toastmaster</span>
+            <svg class="info-card-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="info-card-body">
+            <p class="info-card-text">Ønsker du å holde en tale eller bidra med et innslag under bryllupsfeiringen?</p>
+            <p class="info-card-text">Ta gjerne kontakt med vår toastmaster, Haakon Christoffer Toms Årstad, på e-post:
+              <a href="mailto:hkontoms@gmail.com" class="detail-link">hkontoms@gmail.com</a>
+              eller telefon <a href="tel:91903180" class="detail-link">919 03 180</a>.
+            </p>
+            <p class="info-card-notice">MERK: Husk å skriv «Mariell &amp; Øyvind Bryllup» i emnefeltet.</p>
+          </div>
+        </details>
+
+        <details class="info-card">
+          <summary class="info-card-summary">
+            <span class="info-card-icon">🎁</span>
+            <span class="info-card-title">Gaveliste</span>
+            <svg class="info-card-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="info-card-body">
+            <p class="info-card-text">Den beste gaven er at dere feirer dagen med oss! Dersom du ønsker å gi en gave, blir vi veldig glade for et bidrag til bryllupsreisen vår ❤️</p>
+          </div>
+        </details>
+
+        <details class="info-card">
+          <summary class="info-card-summary">
+            <span class="info-card-icon">💍</span>
+            <span class="info-card-title">Forlovere</span>
+            <svg class="info-card-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="info-card-body">
+            <p class="info-card-text">Har du spørsmål om bryllupet? Kontakt våre forlovere.</p>
+            <p class="info-card-text"><strong>Forloverne til Mariell:</strong><br />Kristine Dalland Ulvang og Sylvia Kristine Hjellbakk Willassen.</p>
+            <p class="info-card-text"><strong>Forloverne til Øyvind:</strong><br />Mats Albins og Geir-Anders Haugen.</p>
+          </div>
+        </details>
+
+        <details class="info-card">
+          <summary class="info-card-summary">
+            <span class="info-card-icon">👔</span>
+            <span class="info-card-title">Dresscode</span>
+            <svg class="info-card-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="info-card-body">
+            <p class="info-card-text">Dress/mørk dress for menn, tilsvarende for kvinner. Vi ber om at hvite kjoler unngås.</p>
+          </div>
+        </details>
+
+        <details class="info-card">
+          <summary class="info-card-summary">
+            <span class="info-card-icon">🚌</span>
+            <span class="info-card-title">Transport</span>
+            <svg class="info-card-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="info-card-body">
+            <p class="info-card-text">Det blir satt opp buss fra kirken til festlokalet.</p>
+          </div>
+        </details>
+
+        <details class="info-card">
+          <summary class="info-card-summary">
+            <span class="info-card-icon">🏨</span>
+            <span class="info-card-title">Overnatting</span>
+            <svg class="info-card-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="info-card-body">
+            <p class="info-card-text">For de som trenger overnatting, anbefaler vi å bestille hotell i Oslo sentrum.</p>
+          </div>
+        </details>
+
+      </div>
+
+      <script>
+        function syncDetails() {
+          document.querySelectorAll('details.info-card').forEach(function(d) {
+            d.open = window.innerWidth >= 681;
+          });
+        }
+        syncDetails();
+        window.addEventListener('resize', syncDetails);
+      </script>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>Mariell &amp; Øyvind &mdash; 9. mai 2025</p>
+  </footer>
+
+</body>
+</html>

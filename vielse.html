@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vielse – Mariell &amp; Øyvind</title>
+  <link rel="icon" type="image/webp" href="images/favicon.webp" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html"><img src="images/favicon.webp" alt="" class="nav-logo" />Mariell &amp; Øyvind</a>
+      <button class="nav-toggle" aria-label="Meny" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Hjem</a></li>
+        <li><a href="dagen-for-dagen.html">Dagen før dagen</a></li>
+        <li><a href="vielse.html" class="active">Vielse</a></li>
+        <li><a href="party.html">Party</a></li>
+        <li><a href="info.html">Info</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page">
+    <div class="container">
+
+      <div class="title-wrap">
+        <h1 class="page-title">Vielse</h1>
+        <div class="accent-bar"></div>
+      </div>
+
+      <div class="two-col">
+
+        <div class="img-wrap landscape">
+          <img src="images/ullern-kirke.webp" alt="Ullern kirke"
+               onerror="this.style.display='none'; this.parentElement.querySelector('.img-placeholder').style.display='flex';" />
+          <div class="img-placeholder" style="display:none; flex-direction:column; align-items:center; gap:0.5rem;">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#5a7a9e" stroke-width="1.5">
+              <path d="M3 21V9l9-6 9 6v12H3z"/>
+              <path d="M12 3v4M10 7h4"/>
+              <rect x="9" y="13" width="6" height="8" rx="1"/>
+            </svg>
+            <span>Ullern kirke</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2 style="font-family:'Cormorant Garamond',serif; font-size:1.5rem; margin-bottom:1.25rem; color:var(--navy);">Ullern kirke</h2>
+
+          <div class="detail-row">
+            <p class="detail-label">Dato og tid</p>
+            <p class="detail-value">Lørdag 9. mai 2025 kl. 13:00</p>
+          </div>
+
+          <div class="detail-row">
+            <p class="detail-label">Adresse</p>
+            <p class="detail-value"><a href="https://www.google.com/maps/search/Holgerslystveien+22+0280+Oslo" target="_blank" class="detail-link">Holgerslystveien 22, inngang Blokkaveien, 0280 Oslo</a></p>
+          </div>
+
+          <div class="detail-body">
+            <strong style="display:block; font-family:'Cormorant Garamond',serif; font-size:1.05rem; margin-bottom:0.5rem;">Transport</strong>
+            Det vil bli satt opp buss fra kirken til festlokalet etter vielsen.
+          </div>
+
+          <div class="detail-body">
+            <strong style="display:block; font-family:'Cormorant Garamond',serif; font-size:1.05rem; margin-bottom:0.5rem;">Mobilfri vielse</strong>
+            Vi ønsker mobilfri vielse og setter stor pris på om dere lar kameraene hvile i kirken. Vi har med oss profesjonell fotograf som vil fange øyeblikkene for oss, og bildene vil selvfølgelig bli delt med alle gjestene i etterkant.
+            <br /><br />
+            Etter vielsen er det fritt fram for å ta egne bilder.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>Mariell &amp; Øyvind &mdash; 9. mai 2025</p>
+  </footer>
+
+</body>
+</html>
