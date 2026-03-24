@@ -10,64 +10,339 @@
 </head>
 <body>
 
-  <nav>
+  <nav id="main-nav">
     <div class="nav-inner">
-      <a class="nav-brand" href="/">
+      <a class="nav-brand" href="#hjem">
         <img src="images/favicon.webp" alt="" class="nav-logo" />
         Mariell &amp; Øyvind
       </a>
-      <button class="nav-toggle" aria-label="Meny" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <button class="nav-toggle" id="nav-toggle" aria-label="Meny" onclick="toggleMenu()">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
           <line x1="3" y1="6" x2="21" y2="6"/>
           <line x1="3" y1="12" x2="21" y2="12"/>
           <line x1="3" y1="18" x2="21" y2="18"/>
         </svg>
       </button>
-      <ul class="nav-links">
-        <li><a href="/" class="active">Hjem</a></li>
-        <li><a href="dagen-for-dagen.html">Dagen før dagen</a></li>
-        <li><a href="vielse.html">Vielse</a></li>
-        <li><a href="party.html">Party</a></li>
-        <li><a href="info.html">Info</a></li>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hjem" class="active">Hjem</a></li>
+        <li><a href="#dagen-for-dagen">Dagen før dagen</a></li>
+        <li><a href="#vielse">Vielse</a></li>
+        <li><a href="#party">Party</a></li>
+        <li><a href="#forlovere">Forlovere</a></li>
+        <li><a href="#info">Info</a></li>
       </ul>
     </div>
   </nav>
 
-  <main class="page">
-    <div class="container">
-      <div class="two-col">
+  <!-- ─── HERO ─────────────────────────────────── -->
+  <section id="hjem">
+    <div class="hero-bg">
+      <img src="images/hero.webp" alt="Mariell og Øyvind" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Vi gifter oss</p>
+      <h1 class="hero-names">Mariell &amp; Øyvind</h1>
+      <p class="hero-date">Lørdag 9. mai 2025</p>
+      <a href="#dagen-for-dagen" class="hero-scroll-btn" aria-label="Scroll ned">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"/>
+        </svg>
+      </a>
+    </div>
+  </section>
 
-        <div class="img-wrap">
-          <img src="images/hero.webp" alt="Mariell og Øyvind"
-               onerror="this.style.display='none'; this.parentElement.querySelector('.img-placeholder').style.display='flex';" />
-          <div class="img-placeholder" style="display:none; flex-direction:column; align-items:center; gap:0.5rem;">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#5a7a9e" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-            <span>Mariell og Øyvind</span>
+  <!-- ─── DAGEN FØR DAGEN ───────────────────────── -->
+  <section id="dagen-for-dagen" class="event-section bg-beige">
+    <div class="event-inner">
+      <div class="event-media">
+        <img src="images/Roof-Top-1-scaled-1-e1683290542488.jpeg" alt="S4 Rooftop" />
+      </div>
+      <div class="event-content">
+        <p class="event-label">Fredag 8. mai &middot; 17:00–21:00</p>
+        <h2 class="event-title">Meet &amp; Greet</h2>
+        <p class="event-venue-text">
+          <a href="https://www.google.com/maps/search/Stortingsgata+4+Oslo" target="_blank" class="venue-link">
+            S4 Rooftop &mdash; Stortingsgata 4, Oslo
+          </a>
+        </p>
+        <p class="event-body">
+          Ettersom mange av dere kommer reisende, tror vi bryllupsdagen blir hyggeligere når folk har blitt litt kjent på forhånd. Vi inviterer derfor til en uformell samling kvelden før med pizza og valgfri drikke for egen regning.
+        </p>
+        <div class="event-tags">
+          <span class="tag">Dresscode: Pent</span>
+          <span class="tag">Mat &amp; drikke for egen regning</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── VIELSE ────────────────────────────────── -->
+  <section id="vielse" class="event-section bg-white event-reverse">
+    <div class="event-inner">
+      <div class="event-media">
+        <img src="images/ullern-kirke.webp" alt="Ullern kirke"
+             onerror="this.style.display='none'; this.parentElement.querySelector('.event-media-placeholder').style.display='flex';" />
+        <div class="event-media-placeholder">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#5a7a9e" stroke-width="1.5">
+            <path d="M3 21V9l9-6 9 6v12H3z"/><path d="M12 3v4M10 7h4"/><rect x="9" y="13" width="6" height="8" rx="1"/>
+          </svg>
+        </div>
+      </div>
+      <div class="event-content">
+        <p class="event-label">Lørdag 9. mai &middot; 13:00</p>
+        <h2 class="event-title">Vielse</h2>
+        <p class="event-venue-text">
+          <a href="https://www.google.com/maps/search/Holgerslystveien+22+0280+Oslo" target="_blank" class="venue-link">
+            Ullern kirke &mdash; Holgerslystveien 22, Oslo
+          </a>
+        </p>
+        <p class="event-body">
+          Vi ønsker mobilfri vielse og setter stor pris på om dere lar kameraene hvile i kirken. Vi har med oss profesjonell fotograf som fanger øyeblikkene, og bildene vil bli delt med alle gjestene i etterkant. Etter vielsen er det fritt frem for egne bilder.
+        </p>
+        <div class="event-tags">
+          <span class="tag">Mobilfri vielse</span>
+          <span class="tag">Buss til festlokalet</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PARTY ─────────────────────────────────── -->
+  <section id="party" class="event-section bg-beige">
+    <div class="event-inner">
+      <div class="event-media">
+        <img src="images/roklubben.jpg" alt="Roklubben på Bygdøy"
+             onerror="this.style.display='none'; this.parentElement.querySelector('.event-media-placeholder').style.display='flex';" />
+        <div class="event-media-placeholder">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#5a7a9e" stroke-width="1.5">
+            <path d="M3 9.5L12 3l9 6.5V21H3V9.5z"/>
+          </svg>
+        </div>
+      </div>
+      <div class="event-content">
+        <p class="event-label">Lørdag 9. mai &middot; 15:00</p>
+        <h2 class="event-title">Party</h2>
+        <p class="event-venue-text">
+          <a href="https://www.google.com/maps/search/Roklubben+Bygdøy+Oslo" target="_blank" class="venue-link">
+            Roklubben &mdash; Bygdøy, Oslo
+          </a>
+        </p>
+        <p class="event-body">
+          Etter vielsen samles vi til en stor fest ved fjorden på Bygdøy! En kveld fylt med god mat, gode drikker og dans langt utover natten.
+        </p>
+        <div class="event-tags">
+          <span class="tag">Festmiddag &amp; dans</span>
+          <span class="tag">Buss fra kirken</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FORLOVERE ─────────────────────────────── -->
+  <section id="forlovere" class="forlovere-section bg-white">
+    <div class="container">
+      <div class="section-header">
+        <p class="event-label">Bli kjent med</p>
+        <h2 class="section-title">Forloverne</h2>
+      </div>
+      <div class="forlovere-grid">
+
+        <div class="forlover-card">
+          <div class="forlover-img">
+            <img src="images/forlover-kristine.png" alt="Kristine Dalland Ulvang"
+                 onerror="this.style.display='none'; this.parentElement.querySelector('.forlover-placeholder').style.display='flex';" />
+            <div class="forlover-placeholder">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#5a7a9e" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            </div>
           </div>
+          <p class="forlover-name">Kristine Dalland Ulvang</p>
+          <p class="forlover-role">Forlover for Mariell</p>
         </div>
 
-        <div class="hero-text">
-          <p class="hero-eyebrow">Vi gifter oss</p>
-          <h1 class="hero-names">Mariell &amp; Øyvind</h1>
-          <p class="hero-date">Lørdag 9. mai 2025</p>
-          <div class="hero-divider"></div>
-          <p class="hero-intro">
-            Vi gleder oss til å feire denne spesielle dagen sammen med dere! Her finner du all informasjon du trenger om bryllupet vårt – fra tid og sted til annen praktisk info.
-            Vi oppdaterer siden fortløpende, så følg gjerne med!
-          </p>
-          <p class="hero-intro" style="margin-top: 0.85rem;">
-            Takk for at du vil være en del av vår store dag. Vi gleder oss til å skape minner sammen med dere,
-            og til å feire kjærligheten med venner og familie.
-          </p>
+        <div class="forlover-card">
+          <div class="forlover-img">
+            <img src="images/forlover-sylvia.png" alt="Sylvia Kristine Hjellbakk Willassen"
+                 onerror="this.style.display='none'; this.parentElement.querySelector('.forlover-placeholder').style.display='flex';" />
+            <div class="forlover-placeholder">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#5a7a9e" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            </div>
+          </div>
+          <p class="forlover-name">Sylvia Kristine Hjellbakk Willassen</p>
+          <p class="forlover-role">Forlover for Mariell</p>
+        </div>
+
+        <div class="forlover-card">
+          <div class="forlover-img">
+            <img src="images/forlover-mats.png" alt="Mats Albins"
+                 onerror="this.style.display='none'; this.parentElement.querySelector('.forlover-placeholder').style.display='flex';" />
+            <div class="forlover-placeholder">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#5a7a9e" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            </div>
+          </div>
+          <p class="forlover-name">Mats Albins</p>
+          <p class="forlover-role">Forlover for Øyvind</p>
+        </div>
+
+        <div class="forlover-card">
+          <div class="forlover-img">
+            <img src="images/forlover-geir.png" alt="Geir-Anders Haugen"
+                 onerror="this.style.display='none'; this.parentElement.querySelector('.forlover-placeholder').style.display='flex';" />
+            <div class="forlover-placeholder">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#5a7a9e" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            </div>
+          </div>
+          <p class="forlover-name">Geir-Anders Haugen</p>
+          <p class="forlover-role">Forlover for Øyvind</p>
         </div>
 
       </div>
     </div>
-  </main>
+  </section>
+
+  <!-- ─── INFO ──────────────────────────────────── -->
+  <section id="info" class="info-section bg-beige">
+    <div class="container">
+      <div class="section-header">
+        <p class="event-label">Alt du trenger å vite</p>
+        <h2 class="section-title">Praktisk info</h2>
+      </div>
+
+      <div class="info-grid">
+
+        <details class="info-card">
+          <summary class="info-card-summary">
+            <span class="info-card-icon">🎤</span>
+            <span class="info-card-title">Toastmaster</span>
+            <svg class="info-card-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="info-card-body">
+            <p class="info-card-text">Ønsker du å holde en tale eller bidra med et innslag under bryllupsfeiringen?</p>
+            <p class="info-card-text">Ta gjerne kontakt med vår toastmaster, Haakon Christoffer Toms Årstad, på e-post:
+              <a href="mailto:hkontoms@gmail.com" class="detail-link">hkontoms@gmail.com</a>
+              eller telefon <a href="tel:91903180" class="detail-link">919 03 180</a>.
+            </p>
+            <p class="info-card-notice">MERK: Husk å skrive «Mariell &amp; Øyvind Bryllup» i emnefeltet.</p>
+          </div>
+        </details>
+
+        <details class="info-card">
+          <summary class="info-card-summary">
+            <span class="info-card-icon">🎁</span>
+            <span class="info-card-title">Gaveliste</span>
+            <svg class="info-card-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="info-card-body">
+            <p class="info-card-text">Den beste gaven er at dere feirer dagen med oss! Dersom du ønsker å gi en gave, blir vi veldig glade for et bidrag til bryllupsreisen vår ❤️</p>
+          </div>
+        </details>
+
+        <details class="info-card">
+          <summary class="info-card-summary">
+            <span class="info-card-icon">👔</span>
+            <span class="info-card-title">Kleskode</span>
+            <svg class="info-card-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="info-card-body">
+            <p class="info-card-text">Vi ønsker at menn møter i mørk dress eller smoking. Damer bes kle seg i lang kjole. Vi ber om at hvit kjole unngås.</p>
+          </div>
+        </details>
+
+        <details class="info-card">
+          <summary class="info-card-summary">
+            <span class="info-card-icon">🚌</span>
+            <span class="info-card-title">Transport</span>
+            <svg class="info-card-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="info-card-body">
+            <p class="info-card-text">Det blir satt opp buss fra kirken til festlokalet.</p>
+          </div>
+        </details>
+
+        <details class="info-card">
+          <summary class="info-card-summary">
+            <span class="info-card-icon">🏨</span>
+            <span class="info-card-title">Overnatting</span>
+            <svg class="info-card-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="info-card-body">
+            <p class="info-card-text">For de som trenger overnatting, anbefaler vi å bestille hotell i Oslo sentrum.</p>
+          </div>
+        </details>
+
+        <details class="info-card">
+          <summary class="info-card-summary">
+            <span class="info-card-icon">💍</span>
+            <span class="info-card-title">Forlovere</span>
+            <svg class="info-card-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="info-card-body">
+            <p class="info-card-text">Har du spørsmål om bryllupet? Kontakt våre forlovere.</p>
+            <p class="info-card-text"><strong>Forloverne til Mariell:</strong><br />Kristine Dalland Ulvang og Sylvia Kristine Hjellbakk Willassen.</p>
+            <p class="info-card-text"><strong>Forloverne til Øyvind:</strong><br />Mats Albins og Geir-Anders Haugen.</p>
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
 
   <footer>
     <p>Mariell &amp; Øyvind &mdash; 9. mai 2025</p>
   </footer>
+
+  <script>
+    var nav = document.getElementById('main-nav');
+
+    // Transparent nav on hero, solid elsewhere
+    function updateNav() {
+      var heroHeight = document.getElementById('hjem').offsetHeight;
+      if (window.scrollY > heroHeight - 80) {
+        nav.classList.add('nav-solid');
+      } else {
+        nav.classList.remove('nav-solid');
+      }
+    }
+    updateNav();
+    window.addEventListener('scroll', updateNav, { passive: true });
+
+    // Mobile menu toggle
+    function toggleMenu() {
+      document.getElementById('nav-links').classList.toggle('open');
+    }
+
+    // Close mobile menu on link click
+    document.querySelectorAll('.nav-links a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        document.getElementById('nav-links').classList.remove('open');
+      });
+    });
+
+    // Active nav link on scroll
+    var sections = document.querySelectorAll('section[id]');
+    var navLinks = document.querySelectorAll('.nav-links a');
+
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          navLinks.forEach(function(a) {
+            a.classList.toggle('active', a.getAttribute('href') === '#' + entry.target.id);
+          });
+        }
+      });
+    }, { rootMargin: '-64px 0px -55% 0px', threshold: 0 });
+
+    sections.forEach(function(s) { observer.observe(s); });
+
+    // Info cards: open on desktop
+    function syncDetails() {
+      document.querySelectorAll('details.info-card').forEach(function(d) {
+        d.open = window.innerWidth >= 681;
+      });
+    }
+    syncDetails();
+    window.addEventListener('resize', syncDetails);
+  </script>
 
 </body>
 </html>
